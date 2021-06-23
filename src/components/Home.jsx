@@ -10,16 +10,77 @@ function Home() {
   const [total, setTotal] = useState(number1 - number2);
   const [total2, setTotal2] = useState(number1 - number3);
   const [total3, setTotal3] = useState(number1 + number4);
+
   function calculateTotal() {
     setTotal(number1 - number2);
     setTotal2(number1 - number3);
     setTotal3(number1 + number4);
   }
+
+  function switchState(){
+    setShow(true);
+    calculateTotal();
+  }
+  
+  const [show,setShow] = React.useState()
+  
+   
+
   return (
     <div className="home">
       <div class="container">
-        <div class="row align-items-center my-5">
-        
+        <div align="center">
+          <br></br>
+        <h1 class="font-weight-light">Enter Shoe Size</h1>
+          <input 
+            type="number"
+            value={number1}
+            onChange={e => setNumber1(+e.target.value)}
+            placeholder="0"
+          />
+          <div>
+            <br></br>
+          {/* <button onClick={calculateTotal}>Click to Calculate</button> */}
+          {/* {
+            show?<h1>Hello testing</h1>:null
+          } */}
+          {/* <button onClick={()=>setShow(!show)}>toggle test</button> */}
+          <button onClick={()=>switchState()}>Click to Calculate</button> 
+         
+          </div>
+
+            <br></br><br></br><br></br><br></br>
+          {show?
+          <div>
+            <h1 class="font-weight-light">You can also shop in these sizes:</h1>
+              
+              <table >
+                <tr>
+                  <th>Men :</th>
+                  <th>{total}</th>
+                  
+                </tr>
+                <tr>
+                  <th>Kids :</th>
+                  <th>{total2}</th>
+                  
+                </tr>
+                <tr>
+                  <th>EU :</th>
+                  <th>{total3}</th>
+                  
+                </tr>
+                <tr>
+                  <th>UK :</th>
+                  <th>{total2}</th>
+                  
+                </tr>
+              </table>
+            </div>:null
+          }
+        </div>
+        {/* <div class="row align-items-center my-5">
+          
           <div class="col-lg-7">
           <h1 class="font-weight-light">Enter Shoe Size</h1>
           <input
@@ -58,10 +119,9 @@ function Home() {
               </tr>
             </table>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 }
-
 export default Home;
