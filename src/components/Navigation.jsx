@@ -7,7 +7,7 @@ function Navigation(props) {
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
           <Link class="navbar-brand" to="/">
-            React Multi-Page Website
+            Footlocker QR 
           </Link>
           <div>
             <ul class="navbar-nav ml-auto">
@@ -26,18 +26,18 @@ function Navigation(props) {
                   props.location.pathname === "/about" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/about">
+                {/* <Link class="nav-link" to="/about">
                   About
-                </Link>
+                </Link> */}
               </li>
               <li
                 class={`nav-item  ${
                   props.location.pathname === "/contact" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/contact">
+                {/* <Link class="nav-link" to="/contact">
                   Contact
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>
