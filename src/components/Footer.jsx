@@ -15,13 +15,14 @@ function Footer() {
 <footer style={{backgroundColor: "Black",overflow: "hidden",position: "absolute",bottom: "0",right: "0",left: "0",height:"28%",width: "100%"}}class="page-footer font-small unique-color-dark pt-4">
   <div class="row">
     <div class="col-12 col-md">
+    <p style={{color: "white",fontSize: "11px"}} align="bottom" color="#FFFFFF">© 2021 FootLocker.com, Inc. All Rights Reserved </p>
       {/* <p style={{color: "white"}} >logo goes here</p> */}
       {/* <img src=""></img> */}
       {/* <small class="d-block mb-3 text-muted">&copy; 2017–2021</small> */}
     </div>
     <div class="col-6 col-md">
       <h5 style={{color: "white"}}>Features</h5>
-      <ul class="list-unstyled text-small">
+      <ul style={{fontSize: "11px"}}class="list-unstyled text-small">
         <li><a style={{color: "white"}} class="link-secondary" href="https://www.footlocker-inc.com/">About Us</a></li>
         <li><a style={{color: "white"}} class="link-secondary" href="https://careers.footlocker.com/">Career Opportunities</a></li>
         <li><a style={{color: "white"}} class="link-secondary" href="https://www.footlocker.com/sitemap.html">SiteMap</a></li>
@@ -37,7 +38,7 @@ function Footer() {
     </div>
     <div class="col-6 col-md">
       <h5 style={{color: "white"}}>Customer Service</h5>
-      <ul class="list-unstyled text-small">
+      <ul style={{fontSize: "11px"}} class="list-unstyled text-small">
         <li><a style={{color: "white"}} class="link-secondary" href="https://help.footlocker.com/hc/en-us/articles/360046621694-Contact-Us">Contact Us</a></li>
         <li><a style={{color: "white"}} class="link-secondary" href="https://help.footlocker.com/hc/en-us/categories/360002182413">Ordering Help</a></li>
         <li><a style={{color: "white"}} class="link-secondary" href="https://www.footlocker.com/order/search">Order Status</a></li>
@@ -50,7 +51,7 @@ function Footer() {
     </div>
     <div class="col-6 col-md">
       <h5 style={{color: "white"}}>Quick Links</h5>
-      <ul class="list-unstyled text-small">
+      <ul style={{fontSize: "11px"}} class="list-unstyled text-small">
         <li><a style={{color: "white"}} class="link-secondary" href="https://stores.footlocker.com/search">Store Locator</a></li>
         <li><a style={{color: "white"}} class="link-secondary" href="https://www.footlocker.com/text-sign-up">Text Sign Up</a></li>
         <li><a style={{color: "white"}} class="link-secondary" href="https://www.footlocker.com/launch101">Launch 101</a></li>
@@ -72,9 +73,9 @@ function Footer() {
       </ul>
     </div> */}
   </div>
-  <div>
+  {/* <div>
   <p style={{color: "white"}} align="right" color="#FFFFFF">© 2021 FootLocker.com, Inc. All Rights Reserved </p>
-  </div>
+  </div> */}
 </footer>
   );
 }
