@@ -12,10 +12,10 @@ function Footer() {
     //   </footer>
     // </div>
 
-<footer style={{backgroundColor: "Black",overflow: "hidden",position: "absolute",bottom: "0",right: "0",left: "0",height:"28%",width: "100%"}}class="page-footer font-small unique-color-dark pt-4">
+<footer style={{backgroundColor: "Black",overflow: "hidden",position: "fixed",bottom: "0",width: "100%",marginTop: "-50px"}}>
   <div class="row">
     <div class="col-12 col-md">
-    <p style={{color: "white",fontSize: "11px"}} align="bottom" color="#FFFFFF">© 2021 FootLocker.com, Inc. All Rights Reserved </p>
+    <p style={{color: "white",align:"bottom"}} align="bottom" color="#FFFFFF">© 2021 FootLocker.com, Inc. All Rights Reserved </p>
       {/* <p style={{color: "white"}} >logo goes here</p> */}
       {/* <img src=""></img> */}
       {/* <small class="d-block mb-3 text-muted">&copy; 2017–2021</small> */}
