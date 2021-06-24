@@ -15,7 +15,7 @@ function Footer() {
 <footer style={{backgroundColor: "Black",overflow: "hidden",position: "fixed",bottom: "0",width: "100%",marginTop: "-50px"}}>
   <div class="row">
     <div class="col-12 col-md">
-    <p style={{color: "white",align:"bottom"}} align="bottom" color="#FFFFFF">© 2021 FootLocker.com, Inc. All Rights Reserved </p>
+    <p style={{color: "white",fontSize: "11px"}} align="bottom" color="#FFFFFF">© 2021 FootLocker.com, Inc. All Rights Reserved </p>
       {/* <p style={{color: "white"}} >logo goes here</p> */}
       {/* <img src=""></img> */}
       {/* <small class="d-block mb-3 text-muted">&copy; 2017–2021</small> */}
