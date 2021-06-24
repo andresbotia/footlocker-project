@@ -45,7 +45,7 @@ function Home() {
             show?<h1>Hello testing</h1>:null
           } */}
           {/* <button onClick={()=>setShow(!show)}>toggle test</button> */}
-          <button onClick={()=>switchState()}>Click to Calculate</button> 
+          <button type="button" class="btn btn-dark"onClick={()=>switchState()}>Click to Calculate</button> 
          
           </div>
 
@@ -76,6 +76,7 @@ function Home() {
                   
                 </tr>
               </table>
+            
             </div>:null
           }
         </div>

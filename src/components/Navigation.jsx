@@ -4,10 +4,10 @@ import { Link, withRouter } from "react-router-dom";
 function Navigation(props) {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <nav style={{backgroundColor: "black"}}class="navbar navbar-expand">
         <div class="container">
           
-          <Link class="navbar-brand" to="/">
+          <Link style={{color: "white"}} class="navbar-brand" to="/">
             Footlocker QR 
           </Link>
           <div>
@@ -17,7 +17,7 @@ function Navigation(props) {
                   props.location.pathname === "/" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/">
+                <Link style={{color: "white"}} class="nav-link" to="/">
                   Home
                   <span class="sr-only">(current)</span>
                 </Link>
