@@ -1,30 +1,40 @@
 import React, {useState} from "react";
 
 function Home() {
+
   const [number1, setNumber1] = useState();
-  // const [number2, setNumber2] = useState(1.5);
-  // const [number3, setNumber3] = useState(2);
   const number2 = 1.5;
   const number3 = 2;
   const number4 = 31;
+
+  
+
   const [total, setTotal] = useState(number1 - number2);
   const [total2, setTotal2] = useState(number1 - number3);
   const [total3, setTotal3] = useState(number1 + number4);
-
   function calculateTotal() {
     setTotal(number1 - number2);
     setTotal2(number1 - number3);
     setTotal3(number1 + number4);
   }
 
+  
   function switchState(){
     setShow(true);
     calculateTotal();
   }
   
   const [show,setShow] = React.useState()
+
+ 
+  // let result = document.querySelector('h2')
+  // selection.addEventListener('change',()=>{
+  //   result.innerText = selection.options[selection.selectedIndex].text;
+  // })
+  let e = document.querySelector("select")
   
-   
+  
+console.log("E E E E",e);
 
   return (
     <div className="home">
@@ -32,12 +42,19 @@ function Home() {
         <div align="center">
           <br></br>
         <h1 class="font-weight-light">Enter Shoe Size</h1>
+
+        {/* <select id="select">
+          <option value="men">Men's size</option>
+          <option value="women">Women's size</option>
+        </select> */}
           <input 
             type="number"
             value={number1}
             onChange={e => setNumber1(+e.target.value)}
             placeholder="0"
           />
+          
+
           <div>
             <br></br>
           {/* <button onClick={calculateTotal}>Click to Calculate</button> */}
@@ -53,6 +70,7 @@ function Home() {
           {show?
           <div>
             <h1 class="font-weight-light">You can also shop in these sizes:</h1>
+            {/* <h5>Kids sizes end 7.5 and men sizes start at 7.5</h5> */}
               
               <table >
                 <tr>
@@ -62,7 +80,7 @@ function Home() {
                 </tr>
                 <tr>
                   <th>Kids :</th>
-                  <th>{total2}</th>
+                  <th>{total}Y</th>
                   
                 </tr>
                 <tr>
@@ -76,52 +94,35 @@ function Home() {
                   
                 </tr>
               </table>
-            
+              
+              {/* <p><a href={link}><button class="btn btn-dark">Show in Men's sizes</button></a></p> */}
+              
+
+              {/* <p><a href="https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A08.5"><button class="btn btn-dark">Show in Men's sizes</button></a></p>
+               */}
+              {/* <p><a href="https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A08.5">SHop your womens size</a></p> */}
             </div>:null
+
+
+            
           }
         </div>
-        {/* <div class="row align-items-center my-5">
-          
-          <div class="col-lg-7">
-          <h1 class="font-weight-light">Enter Shoe Size</h1>
-          <input
-            type="number"
-            value={number1}
-            onChange={e => setNumber1(+e.target.value)}
-            placeholder="0"
-          />
-          <div>
-          <button onClick={calculateTotal}>Click to Calculate</button>
-          </div>
-          </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">You can also shop in these sizes:</h1>
-            
-            <table style={{border: "1px solid black"}}>
-              <tr>
-                <th>Men :</th>
-                <th>{total}</th>
-                
-              </tr>
-              <tr>
-                <th>Kids :</th>
-                <th>{total2}</th>
-                
-              </tr>
-              <tr>
-                <th>EU :</th>
-                <th>{total3}</th>
-                
-              </tr>
-              <tr>
-                <th>UK :</th>
-                <th>{total2}</th>
-                
-              </tr>
-            </table>
-          </div>
-        </div> */}
       </div>
+      {/* <div align='center'>
+       
+
+          <br></br>
+        <select id="inputType">
+          <option value="meter">Meter</option>
+          <option value="kilometer">kilometer</option>
+          <option value="centimeter">centimeter</option>
+        </select>
+        <select id="resultType">
+          <option value="meter">Meter</option>
+          <option value="kilometer">kilometer</option>
+          <option value="centimeter">centimeter</option>
+        </select>
+      </div> */}
     </div>
   );
 }
