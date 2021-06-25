@@ -292,7 +292,6 @@ function Home() {
           console.log("link test 4",link2)
        }
       }
-
     }
     if(gender === "Men"){
       if((number1+number2) === Math.floor((number1+number2))){
@@ -398,7 +397,6 @@ function Home() {
         <div align="center">
           <br></br>
           <h1 class="font-weight-light">Enter Shoe Size</h1>
-          
           
           <br></br>
           <input 
