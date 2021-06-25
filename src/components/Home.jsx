@@ -17,6 +17,7 @@ function Home() {
   const [total3, setTotal3] = useState();
   const [total4, setTotal4] = useState();
   const [total5, setTotal5] = useState();
+  const [total6, setTotal6] = useState();
   const [temp,setTemp] = useState();
   const [temp2,setTemp2] = useState();
 
@@ -24,7 +25,7 @@ function Home() {
   // const[link,setLink] =useState();
   let link ="https://www.footlocker.com/category/mens/shoes.html";
   let link2 = "https://www.footlocker.com/category/womens/shoes.html"
-  let kidsLink = "https://www.footlocker.com/category/kids/shoes/grade-school.html";
+  
 
 
 
@@ -120,12 +121,40 @@ function Home() {
       setTotal2(number1 - 1);
       setTotal3(number1 + number4);
       // setTotal4("Sizing not available");
+      if(number1 === 6){setTotal6("24")}
+      if(number1 === 6.5){setTotal6("24.5")}
+      if(number1 === 7){setTotal6("25")}
+      if(number1 === 7.5){setTotal6("25.5")}
+      if(number1 === 8){setTotal6("26")}
+      if(number1 === 8.5){setTotal6("26.5")}
+      if(number1 === 9){setTotal6("27")}
+      if(number1 === 9.5){setTotal6("27.5")}
+      if(number1 === 10){setTotal6("28")}
+      if(number1 === 10.5){setTotal6("28.5")}
+      if(number1 === 11){setTotal6("29")}
+      if(number1 === 11.5){setTotal6("29.5")}
+      if(number1 === 12){setTotal6("30")}
+      if(number1 === 12.5){setTotal6("30.5")}
+      if(number1 === 13){setTotal6("31")}
+      if(number1 === 13.5){setTotal6("31.5")}
+      if(number1 === 14){setTotal6("32")}
+      if(number1 === 14.5){setTotal6("32.5")}
+      if(number1 === 15){setTotal6("33")}
+      if(number1 === 15.5){setTotal6("33.5")}
+      if(number1 === 16){setTotal6("34")}
+      if(number1 === 16.5){setTotal6("34.5")}
+      if(number1 === 17){setTotal6("35")}
+      if(number1 === 17.5){setTotal6("35.5")}
+      if(number1 === 18){setTotal6("36")}
+      
+
       if((number1 < 6.0) || (number1 > 18.0) ){
         setTotal("Invalid size")
         setTotal2("Invalid size")
         setTotal3("Invalid size")
         setTotal4("Invalid size")
         setTotal5("Invalid size")
+        setTotal6("Invalid size")
       }
     }
     if(gender === "Women"){
@@ -146,14 +175,34 @@ function Home() {
       setTotal2(number1 - number3);
       setTotal3(number1 + number4);
       // setTotal4(number1 - number2 + "Y");
+      if(number1 === 5){setTotal6("22.5")}
+      if(number1 === 5.5){setTotal6("23")}
+      if(number1 === 6){setTotal6("23.5")}
+      if(number1 === 6.5){setTotal6("23.5")}
+      if(number1 === 7){setTotal6("24")}
+      if(number1 === 7.5){setTotal6("24")}
+      if(number1 === 8){setTotal6("24.5")}
+      if(number1 === 8.5){setTotal6("25")}
+      if(number1 === 9){setTotal6("25.5")}
+      if(number1 === 9.5){setTotal6("26")}
+      if(number1 === 10){setTotal6("26.5")}
+      if(number1 === 10.5){setTotal6("27")}
+      if(number1 === 11){setTotal6("27.5")}
+      if(number1 === 11.5){setTotal6("28")}
+      if(number1 === 12){setTotal6("28.5")}
+      
+
       if((number1 < 5.0) || (number1 > 12.0) ){
         setTotal("Invalid size")
         setTotal2("Invalid size")
         setTotal3("Invalid size")
         setTotal4("Invalid size")
         setTotal5("Invalid size")
+        setTotal6("Invalid size")
+        
       }
-    }
+      
+       }
     if(gender === "Kids"){
       console.log("calculating kids sizing")
       setTotal("Sizing not available");
@@ -162,12 +211,21 @@ function Home() {
       setTotal4(number1);
       setTotal5(number1 +number2)
       //setting variable condition check
+      if(number1 === 3.5){setTotal6("22.5")}
+      if(number1 === 4){setTotal6("23")}
+      if(number1 === 4.5){setTotal6("23.5")}
+      if(number1 === 5){setTotal6("23.5")}
+      if(number1 === 5.5){setTotal6("24")}
+      if(number1 === 6){setTotal6("24")}
+      if(number1 === 6.5){setTotal6("24.5")}
+      if(number1 === 7){setTotal6("25")}
       if((number1 < 3.5) || (number1 > 7.0) ){
         setTotal("Invalid size")
         setTotal2("Invalid size")
         setTotal3("Invalid size")
         setTotal4("Invalid size")
         setTotal5("Invalid size")
+        setTotal6("Invalid size")
       }
 
       // console.log("calculating kids sizing")
@@ -262,7 +320,7 @@ function Home() {
           console.log("link test 4",link)
        }
       }
-
+    }
       if(gender === "Kids"){
         if((number1+number2) === Math.floor((number1+number2))){
           console.log("THIS IS AN whole number")
@@ -270,29 +328,28 @@ function Home() {
           if((number1+number2) <10){
             link2 = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A0" + (number1+number2) + ".0")
             console.log(link2)
-            console.log("link test 1",link2)
+            console.log("kids test 1",link2)
           }else if((number1+number2) >10){
             link2 = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A" + (number1+number2) + ".0")
             console.log(link2)
-            console.log("link test 2",link2)
+            console.log("kids test 2",link2)
          }
         }else{
           console.log("this is a decimal")
           if((number1+number2) <10){
             link2 = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A0" + (number1+number2))
             console.log(link2)
-            console.log("link test 3",link2)
+            console.log("kids test 3",link2)
           }else if((number1+number2) >10){
             link2 = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A" + (number1+number2))
             console.log(link2)
-            console.log("link test 4",link2)
+            console.log("kids test 4",link2)
          }
         }
   
       }
-        
       
-    }
+    
     setTemp(link)
     setTemp2(link2)
     
@@ -374,6 +431,12 @@ function Home() {
                 <tr>
                   <th>UK :</th>
                   <th>{total2}</th>
+                  {/* <th>{temp}</th> */}
+                  
+                </tr>
+                <tr>
+                  <th>CM :</th>
+                  <th>{total6}</th>
                   {/* <th>{temp}</th> */}
                   
                 </tr>
