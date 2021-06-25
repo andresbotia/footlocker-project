@@ -442,7 +442,7 @@ function Home() {
                 </tr>
               </table>
               <br></br>
-              <h5 class="font-weight-light">If Sizing is available <br></br>click the buttons below to shop in your new sizing</h5>
+              <h5 class="font-weight-light">If sizing is available <br></br>click below to shop in your new sizing</h5>
 
               <div class="btn-group" role="group" >
               <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp2} style={{color: "white"}}>Shop in Women's size</a></button>
