@@ -2,20 +2,85 @@ import React, {useState} from "react";
 
 function Home() {
 
-  const [number1, setNumber1] = useState();
+  const [number1, setNumber1] = useState(0);
+  // const [gender, setGender] = useState();
   const number2 = 1.5;
   const number3 = 2;
   const number4 = 31;
 
+  let gender = "";
+  
+  const [total, setTotal] = useState();
+  const [total2, setTotal2] = useState();
+  const [total3, setTotal3] = useState();
+  const [total4, setTotal4] = useState();
+
   
 
-  const [total, setTotal] = useState(number1 - number2);
-  const [total2, setTotal2] = useState(number1 - number3);
-  const [total3, setTotal3] = useState(number1 + number4);
+
+
+  // const [total, setTotal] = useState(number1 - number2);
+  // const [total2, setTotal2] = useState(number1 - number3);
+  // const [total3, setTotal3] = useState(number1 + number4);
+
+  function testin1(){
+    if (document.getElementById('checkbox2').checked){
+      document.getElementById('checkbox2').checked = false;
+    }
+    // var value = document.getElementsByTagName('checkbox');
+    if (document.getElementById('checkbox').checked){
+      console.log("checked")
+      gender = "Women";
+    } else {
+      console.log("not checked")
+      gender = ""
+    }
+    console.log(gender);
+  }
+   function testin2(){
+    if (document.getElementById('checkbox').checked){
+      document.getElementById('checkbox').checked = false;
+    }
+    // var value = document.getElementsByTagName('checkbox');
+    if (document.getElementById('checkbox2').checked){
+      console.log("checked")
+
+      gender = "Men";
+
+    } else {
+      console.log("not checked")
+      gender = "";
+    }
+    console.log(gender);
+  }
   function calculateTotal() {
-    setTotal(number1 - number2);
-    setTotal2(number1 - number3);
-    setTotal3(number1 + number4);
+    if (document.getElementById('checkbox2').checked){
+      console.log("checked")
+
+      gender = "Men";
+    }
+  
+    if (document.getElementById('checkbox').checked){
+      console.log("checked")
+      gender = "Women";
+    } 
+    if(gender === "Men"){
+      console.log("calculating men sizing")
+      setTotal("Sizing not available");
+      setTotal2(number1 - 1);
+      setTotal3(number1 + number4);
+      setTotal4("Sizing not available");
+    }
+    if(gender === "Women"){
+      console.log("calculating women sizing")
+      setTotal(number1 - number2);
+      setTotal2(number1 - number3);
+      setTotal3(number1 + number4);
+      setTotal4(number1 - number2 + "Y");
+    }
+    // setTotal(number1 - number2);
+    // setTotal2(number1 - number3);
+    // setTotal3(number1 + number4);
   }
 
   
@@ -27,14 +92,6 @@ function Home() {
   const [show,setShow] = React.useState()
 
  
-  // let result = document.querySelector('h2')
-  // selection.addEventListener('change',()=>{
-  //   result.innerText = selection.options[selection.selectedIndex].text;
-  // })
-  let e = document.querySelector("select")
-  
-  
-console.log("E E E E",e);
 
   return (
     <div className="home">
@@ -43,10 +100,17 @@ console.log("E E E E",e);
           <br></br>
         <h1 class="font-weight-light">Enter Shoe Size</h1>
 
-        {/* <select id="select">
-          <option value="men">Men's size</option>
-          <option value="women">Women's size</option>
-        </select> */}
+        
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="radio" id="checkbox" name="checkbox" onClick={testin1} ></input>
+            <label class="form-check-label" for="checkbox">Women's Sizing</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="radio" id="checkbox2" name="checkbox2" onClick={testin2}></input>
+            <label class="form-check-label" for="checkbox2">Men's Sizing</label>
+          </div>
+          
+          <br></br>
           <input 
             type="number"
             value={number1}
@@ -57,11 +121,7 @@ console.log("E E E E",e);
 
           <div>
             <br></br>
-          {/* <button onClick={calculateTotal}>Click to Calculate</button> */}
-          {/* {
-            show?<h1>Hello testing</h1>:null
-          } */}
-          {/* <button onClick={()=>setShow(!show)}>toggle test</button> */}
+         
           <button type="button" class="btn btn-dark"onClick={()=>switchState()}>Click to Calculate</button> 
          
           </div>
@@ -70,8 +130,6 @@ console.log("E E E E",e);
           {show?
           <div>
             <h1 class="font-weight-light">You can also shop in these sizes:</h1>
-            {/* <h5>Kids sizes end 7.5 and men sizes start at 7.5</h5> */}
-              
               <table >
                 <tr>
                   <th>Men :</th>
@@ -80,7 +138,7 @@ console.log("E E E E",e);
                 </tr>
                 <tr>
                   <th>Kids :</th>
-                  <th>{total}Y</th>
+                  <th>{total4}</th>
                   
                 </tr>
                 <tr>
@@ -95,12 +153,6 @@ console.log("E E E E",e);
                 </tr>
               </table>
               
-              {/* <p><a href={link}><button class="btn btn-dark">Show in Men's sizes</button></a></p> */}
-              
-
-              {/* <p><a href="https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A08.5"><button class="btn btn-dark">Show in Men's sizes</button></a></p>
-               */}
-              {/* <p><a href="https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A08.5">SHop your womens size</a></p> */}
             </div>:null
 
 
@@ -108,21 +160,6 @@ console.log("E E E E",e);
           }
         </div>
       </div>
-      {/* <div align='center'>
-       
-
-          <br></br>
-        <select id="inputType">
-          <option value="meter">Meter</option>
-          <option value="kilometer">kilometer</option>
-          <option value="centimeter">centimeter</option>
-        </select>
-        <select id="resultType">
-          <option value="meter">Meter</option>
-          <option value="kilometer">kilometer</option>
-          <option value="centimeter">centimeter</option>
-        </select>
-      </div> */}
     </div>
   );
 }
