@@ -3,7 +3,6 @@ import React, {useState} from "react";
 function Home() {
 
   const [number1, setNumber1] = useState(0);
-  // const [gender, setGender] = useState();
   const number2 = 1.5;
   const number3 = 2;
   const number4 = 31;
@@ -73,10 +72,21 @@ function Home() {
     }
     if(gender === "Women"){
       console.log("calculating women sizing")
-      setTotal(number1 - number2);
+      if(((number1-number2)<6) ){
+        setTotal("sizing not available");
+      }else if((number1-number2)>6){
+        setTotal(number1 - number2);
+      }
+      if(((number1 - number2) < 3.5)){
+        setTotal4("sizing not available");
+      }else if((number1 - number2) > 7.0){
+        setTotal4("sizing not available");
+      }else{
+        setTotal4(number1 - number2 + "Y");
+      }
       setTotal2(number1 - number3);
       setTotal3(number1 + number4);
-      setTotal4(number1 - number2 + "Y");
+      // setTotal4(number1 - number2 + "Y");
     }
     // setTotal(number1 - number2);
     // setTotal2(number1 - number3);
@@ -98,9 +108,7 @@ function Home() {
       <div class="container">
         <div align="center">
           <br></br>
-        <h1 class="font-weight-light">Enter Shoe Size</h1>
-
-        
+          <h1 class="font-weight-light">Enter Shoe Size</h1>
           <div class="form-check form-switch">
             <input class="form-check-input" type="radio" id="checkbox" name="checkbox" onClick={testin1} ></input>
             <label class="form-check-label" for="checkbox">Women's Sizing</label>
