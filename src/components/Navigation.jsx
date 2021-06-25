@@ -1,14 +1,21 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+// import footlocker from '../footlocker.png'
+import logo from '../logo.svg'
 
 function Navigation(props) {
   return (
     <div className="navigation">
       <nav style={{backgroundColor: "black"}}class="navbar navbar-expand">
         <div class="container">
-          
-          <Link style={{color: "white"}} class="navbar-brand" to="/">
+          {/* <img style={{position: "absolute",left: "-0px",height: "80px",overflow: "hidden"}}src={footlocker} alt="logo"></img> */}
+          <img style={{position: "absolute",height: "30px",overflow: "hidden",marginLeft: "-50px"}}src={logo} alt="logo"></img>
+
+          {/* <Link style={{color: "white"}} class="navbar-brand" to="/">
             Footlocker QR 
+          </Link> */}
+          <Link style={{color: "white"}} class="navbar-brand" to="/">
+            
           </Link>
           <div>
             <ul class="navbar-nav ml-auto">

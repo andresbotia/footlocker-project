@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
+import footlocker from '../footlocker.png'
 
 function Home() {
 
@@ -9,18 +11,21 @@ function Home() {
 
   let gender = "";
   
+  
   const [total, setTotal] = useState();
   const [total2, setTotal2] = useState();
   const [total3, setTotal3] = useState();
   const [total4, setTotal4] = useState();
+  const [temp,setTemp] = useState();
 
+  
+  // const[link,setLink] =useState();
+  let link ="";
   
 
 
 
-  // const [total, setTotal] = useState(number1 - number2);
-  // const [total2, setTotal2] = useState(number1 - number3);
-  // const [total3, setTotal3] = useState(number1 + number4);
+  
 
   function testin1(){
     if (document.getElementById('checkbox2').checked){
@@ -93,10 +98,66 @@ function Home() {
     // setTotal3(number1 + number4);
   }
 
+
+
+  function settingLink(){
+    if(gender === "Women"){
+      if((number1-number2) === Math.floor(number1-number2)){
+        console.log("THIS IS AN whole number")
+        console.log("number1 inside is ", number1)
+        if(number1 <10){
+          link = ("https://www.footlocker.com/search?query=%3Arelevance%3Agender%3A200000%3AproductType%3A200005%3Asize%3A0" + (number1-number2) + ".0")
+          console.log("link test 1",link)
+        }else if(number1 >10){
+          link = ("https://www.footlocker.com/search?query=%3Arelevance%3Agender%3A200000%3AproductType%3A200005%3Asize%3A" + (number1-number2) + ".0")
+          // setLink(link1)
+          console.log("link test 2",link)
+       }
+      }else{
+        console.log("this is a decimal")
+        if(number1 <10){
+          link = ("https://www.footlocker.com/search?query=%3Arelevance%3Agender%3A200000%3AproductType%3A200005%3Asize%3A0" + (number1-number2))
+          
+          console.log("link test 3",link)
+        }else if(number1 >10){
+          link = ("https://www.footlocker.com/search?query=%3Arelevance%3Agender%3A200000%3AproductType%3A200005%3Asize%3A" + (number1-number2))
+          
+          console.log("link test 4",link)
+       }
+      }
+    }
+    // if(gender === "Women"){
+    //   if(number1 === Math.floor((number1-number2))){
+    //     console.log("THIS IS AN whole number")
+    //     if(number1 <10){
+    //       link = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A0" + (number1-number2) + ".0")
+    //       console.log(link)
+    //     }else if(number1 >10){
+    //       link = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A" + (number1-number2) + ".0")
+    //       console.log(link)
+    //    }
+    //   }else{
+    //     console.log("this is a decimal")
+    //     if(number1 <10){
+    //       link = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A0" + (number1-number2))
+    //       console.log(link)
+    //     }else if(number1 >10){
+    //       link = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A" + (number1-number2))
+    //       console.log(link)
+    //    }
+    //   }
+    // }
+    setTemp(link)
+    
+
+  }
   
+  
+
   function switchState(){
     setShow(true);
     calculateTotal();
+    settingLink();
   }
   
   const [show,setShow] = React.useState()
@@ -109,14 +170,7 @@ function Home() {
         <div align="center">
           <br></br>
           <h1 class="font-weight-light">Enter Shoe Size</h1>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="radio" id="checkbox" name="checkbox" onClick={testin1} ></input>
-            <label class="form-check-label" for="checkbox">Women's Sizing</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="radio" id="checkbox2" name="checkbox2" onClick={testin2}></input>
-            <label class="form-check-label" for="checkbox2">Men's Sizing</label>
-          </div>
+          
           
           <br></br>
           <input 
@@ -124,8 +178,15 @@ function Home() {
             value={number1}
             onChange={e => setNumber1(+e.target.value)}
             placeholder="0"
-          />
-          
+          /><br></br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="checkbox" name="checkbox" onClick={testin1} ></input>
+            <label class="form-check-label" for="checkbox">Women's Sizing</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="checkbox2" name="checkbox2" onClick={testin2}></input>
+            <label class="form-check-label" for="checkbox2">Men's Sizing</label>
+          </div>
 
           <div>
             <br></br>
@@ -138,7 +199,7 @@ function Home() {
           {show?
           <div>
             <h1 class="font-weight-light">You can also shop in these sizes:</h1>
-              <table >
+              <table align="center">
                 <tr>
                   <th>Men :</th>
                   <th>{total}</th>
@@ -157,12 +218,17 @@ function Home() {
                 <tr>
                   <th>UK :</th>
                   <th>{total2}</th>
+                  {/* <th>{temp}</th> */}
                   
                 </tr>
               </table>
+              <br></br>
+              <h5 class="font-weight-light">If Sizing is available <br></br>click the buttons below to shop in your new sizing</h5>
+              <button type="button" class="btn btn-dark"><a href ={temp} style={{color: "white"}}>click here to shop in Men's size</a></button>
+              
               
             </div>:null
-
+          
 
             
           }
