@@ -266,9 +266,33 @@ function Home() {
           
           console.log("link test 4",link)
        }
-
-       
       }
+      //setting women link
+      if((number1) === Math.floor((number1))){
+        console.log("THIS IS AN whole number")
+        
+        if((number1) <10){
+          link2 = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A0" + (number1) + ".0")
+          console.log(link2)
+          console.log("link test 1",link2)
+        }else if((number1) >10){
+          link2 = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A" + (number1) + ".0")
+          console.log(link2)
+          console.log("link test 2",link2)
+       }
+      }else{
+        console.log("this is a decimal")
+        if((number1) <10){
+          link2 = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A0" + (number1))
+          console.log(link2)
+          console.log("link test 3",link2)
+        }else if((number1) >10){
+          link2 = ("https://www.footlocker.com/search?query=womens+shoes%3Arelevance%3Agender%3A200001%3AproductType%3A200005%3Asize%3A" + (number1))
+          console.log(link2)
+          console.log("link test 4",link2)
+       }
+      }
+
     }
     if(gender === "Men"){
       if((number1+number2) === Math.floor((number1+number2))){
