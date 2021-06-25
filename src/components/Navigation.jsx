@@ -35,7 +35,7 @@ function Navigation(props) {
                 }`}
               >
                 {/* <Link class="nav-link" to="/about">
-                  About
+                  Meet the interns
                 </Link> */}
               </li>
               <li

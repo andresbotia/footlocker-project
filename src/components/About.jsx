@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import family from '../family.jpg'
 
 function About() {
   const [number1, setNumber1] = useState(0);
@@ -116,7 +117,10 @@ function About() {
             <button align="center" type="button" class="btn btn-dark"onClick={()=>switchState()}>Click to Calculate</button>
           </div>
           <div class="col-lg-5">
-          {show?
+            <img src={family} alt="logo"></img>
+          </div>
+        </div>
+        {show?
           <div>
             <h2 class="font-weight-light">You can also shop in these sizes:</h2>
               <table align="center">
@@ -147,8 +151,6 @@ function About() {
 
             
           }
-          </div>
-        </div>
       </div>
     </div>
   );
