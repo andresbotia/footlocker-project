@@ -401,7 +401,7 @@ function Home() {
           <br></br>
           <input 
             type="number"
-            value={number1}
+            
             onChange={e => setNumber1(+e.target.value)}
             placeholder="0"
           /><br></br>
@@ -425,9 +425,10 @@ function Home() {
          
           </div>
 
-            <br></br><br></br><br></br><br></br>
+          <br></br>
           {show?
-          <div>
+          
+          <div align="center">
             <h1 class="font-weight-light">You can also shop in these sizes:</h1>
               <table align="center">
               <tr>
@@ -463,16 +464,14 @@ function Home() {
                   
                 </tr>
               </table>
-              <br></br>
+              
               <h5 class="font-weight-light">If sizing is available <br></br>click below to shop in your new sizing</h5>
 
               <div class="btn-group" role="group" >
               <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp2} style={{color: "white"}}>Shop in Women's size</a></button>
-              <br></br>
-              <br></br>
+              
               <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp} style={{color: "white"}}>Shop in Men's size</a></button>
-              <br></br>
-              <br></br>
+              
               <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ="https://www.footlocker.com/category/kids/shoes/grade-school.html" style={{color: "white"}}>Shop in Kids size</a></button>
               </div>
               

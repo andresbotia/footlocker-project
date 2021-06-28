@@ -9,7 +9,7 @@ function Navigation(props) {
       <nav style={{backgroundColor: "black"}}class="navbar navbar-expand">
         <div class="container">
           {/* <img style={{position: "absolute",left: "-0px",height: "80px",overflow: "hidden"}}src={footlocker} alt="logo"></img> */}
-          <img style={{position: "absolute",height: "30px",overflow: "hidden",marginLeft: "-50px"}}src={logo} alt="logo"></img>
+          <img style={{position: "absolute",height: "30px",overflow: "hidden"}}src={logo} alt="logo"></img>
 
           {/* <Link style={{color: "white"}} class="navbar-brand" to="/">
             Footlocker QR 
