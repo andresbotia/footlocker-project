@@ -43,8 +43,8 @@ function Navigation(props) {
                   props.location.pathname === "/contact" ? "active" : ""
                 }`}
               >
-                {/* <Link class="nav-link" to="/contact">
-                  Contact
+                {/* <Link style={{color: "white"}} class="nav-link" to="/contact">
+                  Interns
                 </Link> */}
               </li>
             </ul>

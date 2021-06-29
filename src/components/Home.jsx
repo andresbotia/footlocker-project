@@ -160,21 +160,28 @@ function Home() {
     if(gender === "Women"){
       setTotal5(number1)
       console.log("calculating women sizing")
+      //setTotal = men
+      //setTotal4 = kids
+      //number1 = input
+      //number2 = 1.5
       if(((number1-number2)<6) ){
         setTotal("sizing not available");
       }else if((number1-number2)>6){
         setTotal(number1 - number2);
       }
+
       if(((number1 - number2) < 3.5)){
         setTotal4("sizing not available");
-      }else if((number1 - number2) > 6.0){
+      }else if((number1 - number2) > 7.0){
         setTotal4("sizing not available");
       }else{
         setTotal4(number1 - number2 + "Y");
       }
+
       setTotal2(number1 - number3);
       setTotal3(number1 + number4);
       // setTotal4(number1 - number2 + "Y");
+      //setting specific cm sizing
       if(number1 === 5){setTotal6("22.5")}
       if(number1 === 5.5){setTotal6("23")}
       if(number1 === 6){setTotal6("23.5")}
@@ -429,7 +436,7 @@ function Home() {
           {show?
           
           <div align="center">
-            <h1 class="font-weight-light">You can also shop in these sizes:</h1>
+            <h3 class="font-weight-light">You can also shop in these sizes:</h3>
               <table align="center">
               <tr>
                   <th>Women's :</th>
@@ -464,15 +471,15 @@ function Home() {
                   
                 </tr>
               </table>
-              
-              <h5 class="font-weight-light">If sizing is available <br></br>click below to shop in your new sizing</h5>
+{/*               
+              <h5 class="font-weight-light">If sizing is available <br></br>click below to shop in your new sizing</h5> */}
 
               <div class="btn-group" role="group" >
-              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp2} style={{color: "white"}}>Shop in Women's size</a></button>
+              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp2} style={{color: "white"}} target="_blank">Shop in Women's size</a></button>
               
-              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp} style={{color: "white"}}>Shop in Men's size</a></button>
+              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp} style={{color: "white"}} target="_blank">Shop in Men's size</a></button>
               
-              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ="https://www.footlocker.com/category/kids/shoes/grade-school.html" style={{color: "white"}}>Shop in Kids size</a></button>
+              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ="https://www.footlocker.com/category/kids/shoes/grade-school.html" style={{color: "white"}} target="_blank">Shop in Kids size</a></button>
               </div>
               
             </div>:null
