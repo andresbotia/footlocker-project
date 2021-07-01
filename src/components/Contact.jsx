@@ -4,8 +4,93 @@ import pic1 from '../pic1.jpg'
 
 function Contact() {
   return (
+    <div class="container" align="center">
     
+    <div class="row" align="center">
+      <div class="col-sm-6">
+      <br></br>
+      <div class="card text-center" style={{width: "18rem"}}>
+        <img class="card-img-top" src={pic1} alt="Card image top"></img>
+        <div class="card-body">
+          <h5 class="card-title">Isiah Austin</h5>
+          <p class="card-text">Accounting</p>
+          <a href="#" class="btn btn-primary">LinkedIn</a>
+        </div>
+      </div>
+      </div>
 
+      <div class="col-sm-6">
+      <br></br>
+      <div class="card text-center" style={{width: "18rem"}}>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+        <div class="card-body">
+          <h5 class="card-title">Donovan Beckford</h5>
+          <p class="card-text">Allocations KFL</p>
+          <a href="#" class="btn btn-primary">LinkedIn</a>
+        </div>
+      </div>
+      </div>
+
+      </div>
+
+
+      <div class="row" align="center">
+      <div class="col-sm-6">
+      <br></br>
+      <div class="card text-center" style={{width: "18rem"}}>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+        <div class="card-body">
+          <h5 class="card-title">Andres Botia</h5>
+          <p class="card-text">Core Retail</p>
+          <a href="#" class="btn btn-primary">LinkedIn</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-sm-6">
+      <br></br>
+      <div class="card text-center" style={{width: "18rem"}}>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+        <div class="card-body">
+          <h5 class="card-title">Diamond Jennings</h5>
+          <p class="card-text">Brand Marketing FTL/LFL/KFL</p>
+          <a href="#" class="btn btn-primary">LinkedIn</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+      <div class="row" align="center">
+      <div class="col-sm-6">
+      <br></br>
+      <div class="card text-center" style={{width: "18rem"}}>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+        <div class="card-body">
+          <h5 class="card-title">Ambar Mendez</h5>
+          <p class="card-text">CX Innovation</p>
+          <a href="#" class="btn btn-primary">LinkedIn</a>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-sm-6">
+      <br></br>
+      <div class="card text-center" style={{width: "18rem"}}>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+        <div class="card-body">
+          <h5 class="card-title">Bryan Zangrando</h5>
+          <p class="card-text">Customer Experience</p>
+          <a href="#" class="btn btn-primary">LinkedIn</a>
+        </div>
+      </div>
+      </div>
+      </div>
+    <br></br>
+    <br></br>
+    </div>
+
+    
     
     // <div className="contact">
     //   <div class="container">
@@ -30,36 +115,8 @@ function Contact() {
     //   </div>
     // </div>
     
-<div class="container">
-  <br></br>
-<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="{pic1}" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Andres Botia</h5>
-      <p class="card-text">Core Retail Intern</p>
-      <button type="button" class="btn btn-dark" a href="https://www.linkedin.com/in/andres-botia/">LinkedIn</button>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="{logo" alt="Card image cap"></img>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
 
-</div>
+
 
 
   

@@ -428,7 +428,7 @@ function Home() {
           <div>
             <br></br>
          
-          <button type="button" class="btn btn-dark"onClick={()=>switchState()}>Click to Calculate</button> 
+          <button style={{backgroundColor: "black"}} type="button" class="btn btn-dark"onClick={()=>switchState()}>Click to Calculate</button> 
          
           </div>
 
@@ -449,7 +449,7 @@ function Home() {
                   
                 </tr>
                 <tr>
-                  <th>Kids :</th>
+                  <th>Kids' :</th>
                   <th>{total4}</th>
                   
                 </tr>
@@ -475,11 +475,11 @@ function Home() {
               <h5 class="font-weight-light">If sizing is available <br></br>click below to shop in your new sizing</h5> */}
 
               <div class="btn-group" role="group" >
-              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp2} style={{color: "white"}} target="_blank">Shop in Women's size</a></button>
+              <button style={{margin:"5px",backgroundColor: "black"}}type="button" class="btn btn-dark"><a href ={temp2} style={{color: "white"}} target="_blank">Shop in Women's size</a></button>
               
-              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ={temp} style={{color: "white"}} target="_blank">Shop in Men's size</a></button>
+              <button style={{margin:"5px",backgroundColor: "black"}}type="button" class="btn btn-dark"><a href ={temp} style={{color: "white"}} target="_blank">Shop in Men's size</a></button>
               
-              <button style={{margin:"5px"}}type="button" class="btn btn-dark"><a href ="https://www.footlocker.com/category/kids/shoes/grade-school.html" style={{color: "white"}} target="_blank">Shop in Kids size</a></button>
+              <button style={{margin:"5px",backgroundColor: "black"}}type="button" class="btn btn-dark"><a href ="https://www.footlocker.com/category/kids/shoes/grade-school.html" style={{color: "white"}} target="_blank">Shop in Kids' size</a></button>
               </div>
               
             </div>:null
@@ -489,6 +489,10 @@ function Home() {
           }
         </div>
       </div>
+      
+
+          
+
     </div>
   );
 }
