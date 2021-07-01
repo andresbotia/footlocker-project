@@ -481,7 +481,7 @@ function Home() {
               
               <button style={{margin:"5px",backgroundColor: "black"}}type="button" class="btn btn-dark"><a href ="https://www.footlocker.com/category/kids/shoes/grade-school.html" style={{color: "white"}} target="_blank">Shop in Kids' size</a></button>
               </div>
-              
+              <br></br><br></br>
             </div>:null
           
 
