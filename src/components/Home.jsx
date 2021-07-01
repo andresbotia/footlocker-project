@@ -250,6 +250,8 @@ function Home() {
 
 
   function settingLink(){
+    link = "https://www.footlocker.com/category/mens/shoes.html";
+    link2 = "https://www.footlocker.com/category/womens/shoes.html"
     if(gender === "Women"){
       if((number1-number2) === Math.floor(number1-number2)){
         console.log("THIS IS AN whole number")
