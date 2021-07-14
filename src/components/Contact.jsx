@@ -1,6 +1,12 @@
 import React from "react";
 
 import pic1 from '../pic1.jpg'
+import pic2 from '../pic2.jpg'
+import pic3 from '../pic3.jpg'
+import pic4 from '../pic4.jpg'
+import pic5 from '../pic5.jpg'
+
+
 
 function Contact() {
   return (
@@ -14,7 +20,7 @@ function Contact() {
         <div class="card-body">
           <h5 class="card-title">Isiah Austin</h5>
           <p class="card-text">Accounting</p>
-          <a href="#" class="btn btn-primary">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/isiah-austin-124b171aa/" class="btn btn-primary">LinkedIn</a>
         </div>
       </div>
       </div>
@@ -22,11 +28,11 @@ function Contact() {
       <div class="col-sm-6">
       <br></br>
       <div class="card text-center" style={{width: "18rem"}}>
-      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+      <img class="card-img-top" src={pic2} alt="Card image top"></img>
         <div class="card-body">
           <h5 class="card-title">Donovan Beckford</h5>
           <p class="card-text">Allocations KFL</p>
-          <a href="#" class="btn btn-primary">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/donovan-b-764a64130/" class="btn btn-primary">LinkedIn</a>
         </div>
       </div>
       </div>
@@ -38,11 +44,11 @@ function Contact() {
       <div class="col-sm-6">
       <br></br>
       <div class="card text-center" style={{width: "18rem"}}>
-      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+      <img class="card-img-top" src={pic3} alt="Card image top"></img>
         <div class="card-body">
           <h5 class="card-title">Andres Botia</h5>
           <p class="card-text">Core Retail</p>
-          <a href="#" class="btn btn-primary">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/andres-botia/" class="btn btn-primary">LinkedIn</a>
         </div>
       </div>
       </div>
@@ -50,11 +56,11 @@ function Contact() {
       <div class="col-sm-6">
       <br></br>
       <div class="card text-center" style={{width: "18rem"}}>
-      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+      <img class="card-img-top" src={pic4} alt="Card image top"></img>
         <div class="card-body">
           <h5 class="card-title">Diamond Jennings</h5>
           <p class="card-text">Brand Marketing FTL/LFL/KFL</p>
-          <a href="#" class="btn btn-primary">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/DiamondJennings/" class="btn btn-primary">LinkedIn</a>
         </div>
       </div>
       </div>
@@ -65,11 +71,11 @@ function Contact() {
       <div class="col-sm-6">
       <br></br>
       <div class="card text-center" style={{width: "18rem"}}>
-      <img class="card-img-top" src={pic1} alt="Card image top"></img>
+      <img class="card-img-top" src={pic5} alt="Card image top"></img>
         <div class="card-body">
           <h5 class="card-title">Ambar Mendez</h5>
           <p class="card-text">CX Innovation</p>
-          <a href="#" class="btn btn-primary">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/ambarmendez25/" class="btn btn-primary">LinkedIn</a>
         </div>
       </div>
       </div>
@@ -81,7 +87,7 @@ function Contact() {
         <div class="card-body">
           <h5 class="card-title">Bryan Zangrando</h5>
           <p class="card-text">Customer Experience</p>
-          <a href="#" class="btn btn-primary">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/bryan-zangrando-6a8745a1/" class="btn btn-primary">LinkedIn</a>
         </div>
       </div>
       </div>
