@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import family from '../family.jpg'
+
 
 function About() {
   

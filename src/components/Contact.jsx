@@ -1,10 +1,7 @@
 import React from "react";
 
 import pic1 from '../pic1.jpg'
-import pic2 from '../pic2.jpg'
-import pic3 from '../pic3.jpg'
-import pic4 from '../pic4.jpg'
-import pic5 from '../pic5.jpg'
+
 
 
 
@@ -28,7 +25,7 @@ function Contact() {
       <div class="col-sm-6">
       <br></br>
       <div class="card text-center" style={{width: "18rem"}}>
-      <img class="card-img-top" src={pic2} alt="Card image top"></img>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
         <div class="card-body">
           <h5 class="card-title">Donovan Beckford</h5>
           <p class="card-text">Allocations KFL</p>
@@ -44,7 +41,7 @@ function Contact() {
       <div class="col-sm-6">
       <br></br>
       <div class="card text-center" style={{width: "18rem"}}>
-      <img class="card-img-top" src={pic3} alt="Card image top"></img>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
         <div class="card-body">
           <h5 class="card-title">Andres Botia</h5>
           <p class="card-text">Core Retail</p>
@@ -56,7 +53,7 @@ function Contact() {
       <div class="col-sm-6">
       <br></br>
       <div class="card text-center" style={{width: "18rem"}}>
-      <img class="card-img-top" src={pic4} alt="Card image top"></img>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
         <div class="card-body">
           <h5 class="card-title">Diamond Jennings</h5>
           <p class="card-text">Brand Marketing FTL/LFL/KFL</p>
@@ -71,7 +68,7 @@ function Contact() {
       <div class="col-sm-6">
       <br></br>
       <div class="card text-center" style={{width: "18rem"}}>
-      <img class="card-img-top" src={pic5} alt="Card image top"></img>
+      <img class="card-img-top" src={pic1} alt="Card image top"></img>
         <div class="card-body">
           <h5 class="card-title">Ambar Mendez</h5>
           <p class="card-text">CX Innovation</p>
