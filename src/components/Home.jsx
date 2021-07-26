@@ -473,7 +473,7 @@ function Home() {
                   
                 </tr>
               </table>
-{/*               
+{/*           
               <h5 class="font-weight-light">If sizing is available <br></br>click below to shop in your new sizing</h5> */}
 
               <div class="btn-group" role="group" >

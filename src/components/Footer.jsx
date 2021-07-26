@@ -79,6 +79,10 @@ function Footer() {
 //   </div> */}
 // </footer>
 //   );
+//random code here idk im just bored at this point , if you find this let me know :)
+//<div> 
+//<h5>this literally does nothing</h5>
+//</div>
 }
 
 export default Footer;
