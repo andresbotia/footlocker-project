@@ -6,9 +6,7 @@ function About() {
   return (
     <div className="about">
       <div class="container">
-          <div style={{left: "0"}}>
-            <img src={family} alt="logo"></img>
-          </div>
+          <p>test</p>
         </div>
       </div>
   );
