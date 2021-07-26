@@ -8,7 +8,7 @@ import pic1 from '../pic1.jpg'
 function Contact() {
   return (
     <div class="container" align="center">
-    
+    <p>test</p>
     <div class="row" align="center">
       <div class="col-sm-6">
       <br></br>
