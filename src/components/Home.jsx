@@ -405,7 +405,7 @@ function Home() {
       <div class="container">
         <div align="center">
           <br></br>
-          <h1 class="font-weight-light">SHDASHDASDASHDASDJH</h1>
+          <h1 class="font-weight-light">Input shoe size/h1>
           
           <br></br>
           <input 
